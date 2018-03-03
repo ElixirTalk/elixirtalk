@@ -5,4 +5,4 @@ The Repo for the ElixirTalk Podcast.  Listen at https://itunes.apple.com/us/podc
 Open an Issue with your question in the subject.  Add any relevant details in the description.
 
 ### Following us on Twitter
-Our handle is @ElixirTalk.  Find us and click ...Follow.
+Our handle is [@ElixirTalk](https://twitter.com/elixirtalk).  Find us and click ...Follow.
