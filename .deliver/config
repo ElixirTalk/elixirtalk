@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-APP="elixirtalk"
+APP="elixir_talk"
 USING_DISTILLERY=true
 
 CREVALLE="23.92.18.58"
