@@ -7,6 +7,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@elixirtalk" />
+    <meta name="twitter:title" content="The ElixirTalk Podcast" />
+    <meta name="twitter:description" content="Desmond Bowe and Chris Bell answer your questions about Elixir application design." />
+    <meta name="twitter:image" content="<%= static_path(@conn, "/images/logo.png") %>" />
+
+    <meta property="og:url"         content="<%= @conn.request_path %>" />
+    <meta property="og:title"       content="The ElixirTalk Podcast" />
+    <meta property="og:description" content="Desmond Bowe and Chris Bell answer your questions about Elixir application design." />
+    <meta property="og:image"       content="<%= static_path(@conn, "/images/logo.png") %>" />
+
+    <%= render "favicons.html", conn: @conn %>
+
     <title>The ElixirTalk Podcast</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
@@ -20,7 +33,7 @@
 
     </div> <!-- /container -->
     <div class="footer">
-      © <%= this_year %> ElixirTalk all rights reserved
+      © <%= this_year() %> ElixirTalk all rights reserved
     </div>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
