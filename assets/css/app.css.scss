@@ -1,0 +1,116 @@
+
+@import "bootstrap";
+
+$et-pink: rgba(241,43,95,1);
+$et-purple: rgba(63,36,75,1);
+$light-purple: rgba(163,62,208,.4);
+
+/* This file is for your main application css. */
+
+/* Custom page header */
+.header {
+  .headline {
+    display: flex;
+    align-items: center;
+  }
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  margin-right: 5px;
+}
+
+.host {
+  border-style: solid;
+  border-color: $et-purple;
+  border-width: 1px;
+  border-radius: 3px;
+
+  padding: 5px;
+
+  .heading {
+    display: flex;
+
+    .host-name {
+      margin-right: 5px;
+    }
+
+  }
+
+  .avatar {
+    float: left;
+    width: 20%;
+    margin-right: 5px;
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+}
+
+section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.episode {
+  display: flex;
+
+  .link {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .description {
+    flex: 1;
+  }
+
+}
+
+
+.listen {
+  padding-top: 5px;
+}
+
+.bg-pink {
+  background: rgba($et-pink, .2);
+}
+
+.bg-purple {
+  background: rgba($light-purple, .4);
+}
+
+/* p { */
+  /* padding-top: 3px; */
+  /* padding-bottom: 3px; */
+/* } */
+
+.hosts {
+  display: flex;
+  justify-content: center;
+}
+
+.host {
+  flex: 1;
+
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: $et-purple;
+}

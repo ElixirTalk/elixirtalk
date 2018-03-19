@@ -1,0 +1,97 @@
+<div class="header">
+  <div class="headline">
+    <div class="logo">
+      <img src=<%= static_path(@conn, "/images/logo.png") %> width="100px">
+    </div>
+    <h1>The ElixirTalk Podcast</h1>
+  </div>
+  <p>Taking questions from around the Elixir community about application design principles and the state of the ecosystem. <a href="https://github.com/elixirtalk/elixirtalk/issues" target="_blank">Ask us a question</a>! </p>
+</div>
+
+<section class="latest-episode bg-pink">
+  <h3>Latest Episode</h3>
+  <div class="episode">
+    <div class="link">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/409643082&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
+    </div>
+    <div class="description">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </div>
+  </div>
+  <div class="listen">
+    <p>
+    Listen to all episodes on <a href="https://itunes.apple.com/us/podcast/elixirtalk/id1298287048?mt=2" target="_blank">iTunes</a> or our <a href="https://soundcloud.com/elixirtalk" target="_blank">SoundCloud page</a>.
+    </p>
+  </div>
+</section>
+
+<section class="about">
+  <h3>Elixir Expertise</h3>
+  <div class="description">
+    <p>
+      Chris and Desmond have half a decade of combined Elixir experience on dozens of applications.  They've deployed apps to Heroku, Linode, and EC2, brought Elixir into existing organizations, and worked on greenfield projects.
+    </p>
+    <p>
+      They are organizers of the <a href="https://empex.co" target="_blank">EMPEX Conferences</a> and big fans of Star Trek.
+    </p>
+  </div>
+  <div class="hosts">
+
+    <div class="host">
+      <div class="heading">
+        <h5 class="host-name">Desmond Bowe</h5>
+        <div class="social">
+          <a href="https://twitter.com/desmondmonster" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/desmondmonster" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div> <!-- heading -->
+      <div class="avatar">
+        <img src="https://pbs.twimg.com/profile_images/856945592798515201/BeMEvWmQ_400x400.jpg" alt="desmondmonster">
+      </div>
+      <div class="bio">
+        <p>
+          Lorem ipsum dolor sit amneius I wish I had gotten that sweet motorcycle!  Desmon d enjoys playing pinball and growing his mustache.  Its any scss file but it only happens intermittently, they files are definitely there. it will happen for a while and the site doesn't load css, but if i carry on making more changes eventually the error goes away and the site loads normally
+        </p>
+      </div>
+    </div> <!-- host -->
+
+    <div class="host">
+      <div class="heading">
+        <h5 class="host-name">Chris Bell</h5>
+        <div class="social">
+          <a href="https://twitter.com/cjbell_" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/cjbell_" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div> <!-- heading -->
+      <div class="avatar">
+        <img src="https://pbs.twimg.com/profile_images/711365115413712896/-6cOi6HJ_400x400.jpg" alt="cjbell">
+      </div>
+      <div class="bio">
+        <p>
+          Lorem ipsum dolor sit amneius I wish I had gotten that sweet motorcycle!  Desmon d enjoys playing pinball and growing his mustache.  Its any scss file but it only happens intermittently, they files are definitely there. it will happen for a while and the site doesn't load css, but if i carry on making more changes eventually the error goes away and the site loads normally
+        </p>
+      </div>
+    </div> <!-- host -->
+
+  </div> <!-- hosts -->
+</section>
+
+<section class="consulting bg-pink">
+  <h3>Personalized Consulting</h3>
+  <p>
+  Adopting Elixir at your company?  Don't make costly mistakes or spin your wheels while your team ramps up.  Our years of experience can help you make the right architectural decisions and give your team the training to get up and running quickly and confidently.
+  </p>
+  <p>
+  Contact us at info [at] elixirtalk.com for more information.
+  </p>
+</section>
