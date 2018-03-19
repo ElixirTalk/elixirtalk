@@ -1,0 +1,47 @@
+#!/usr/bin/sh
+
+APP="crevalle"
+USING_DISTILLERY=true
+
+CREVALLE="23.92.18.58"
+
+BUILD_HOST="$CREVALLE"
+BUILD_USER="desmond"
+BUILD_AT="/home/desmond/edeliver/$APP/builds"
+
+RELEASE_DIR="$BUILD_AT/_build/prod/rel/crevalle"
+
+# prevent re-installing node modules; this defaults to "."
+GIT_CLEAN_PATHS="_build rel priv/static"
+
+PRODUCTION_HOSTS="$CREVALLE"
+PRODUCTION_USER="desmond"
+DELIVER_TO="/home/desmond/apps"
+
+# For *Phoenix* projects, symlink prod.secret.exs to our tmp source
+pre_erlang_get_and_update_deps() {
+  local _secret_path="/home/desmond/apps/elixirtalk.secret.exs"
+  if [ "$TARGET_MIX_ENV" = "prod" ]; then
+    __sync_remote "
+      ln -sfn '$_secret_path' '$BUILD_AT/config/prod.secret.exs'
+    "
+  fi
+}
+
+pre_erlang_clean_compile() {
+  status "Running phoenix.digest" # log output prepended with "----->"
+  __sync_remote " # runs the commands on the build host
+    # [ -f ~/.profile ] && source ~/.profile # load profile (optional)
+    source ~/.profile
+    source ~/.bash_env
+    set -e # fail if any command fails (recommended)
+
+    cd '$BUILD_AT' # enter the build directory on the build host (required)
+    mkdir -p priv/static # required by the phoenix.digest task
+    cd assets && npm install && ./node_modules/brunch/bin/brunch build --production
+
+    # run your custom task
+    APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD do deps.get, phx.digest $SILENCE
+  "
+}
+
