@@ -41,6 +41,7 @@ pre_erlang_clean_compile() {
     cd assets && npm install && ./node_modules/brunch/bin/brunch build --production
 
     # run your custom task
+    cd '$BUILD_AT'
     APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD do deps.get, phx.digest $SILENCE
   "
 }
