@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-APP="crevalle"
+APP="elixirtalk"
 USING_DISTILLERY=true
 
 CREVALLE="23.92.18.58"
@@ -9,7 +9,7 @@ BUILD_HOST="$CREVALLE"
 BUILD_USER="desmond"
 BUILD_AT="/home/desmond/edeliver/$APP/builds"
 
-RELEASE_DIR="$BUILD_AT/_build/prod/rel/crevalle"
+RELEASE_DIR="$BUILD_AT/_build/prod/rel/elixirtalk"
 
 # prevent re-installing node modules; this defaults to "."
 GIT_CLEAN_PATHS="_build rel priv/static"
