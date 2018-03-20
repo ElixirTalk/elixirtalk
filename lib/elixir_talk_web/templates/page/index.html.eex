@@ -16,7 +16,14 @@
     </div>
     <div class="description">
       <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        How should you handle Authorization and Authentication in your Phoenix app? We also investigate common app patterns and the feasibility of extracting reusable components into an umbrella app.
+      </p>
+      <p>
+        SHOW NOTES:
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=KmM9nt7kg68&list=PLyO-58-sOapy9Fs4Sd-HOeQIFwrSCQ3z1" target="_blank">EMPEX LA talks</a></li>
+          <li><a href="http://empex.co/nyc" target="_blank">EMPEX NYC CFP</a></li>
+        </ul>
       </p>
     </div>
   </div>
@@ -28,10 +35,10 @@
 </section>
 
 <section class="about">
-  <h3>Elixir Expertise</h3>
+  <h3>|> Elixir Expertise</h3>
   <div class="description">
     <p>
-      Chris and Desmond have half a decade of combined Elixir experience on dozens of applications.  They've deployed apps to Heroku, Linode, and EC2, brought Elixir into existing organizations, and worked on greenfield projects.
+      Chris and Desmond have over half a decade of combined Elixir experience on dozens of applications in fields such as cryptocurrency, digital media, consumer products, and restaurants.  They've deployed apps to Heroku, Linode, and EC2, successfully adopted Elixir at existing organizations, and worked on greenfield projects.
     </p>
     <p>
       They are organizers of the <a href="http://empex.co" target="_blank">EMPEX Conferences</a> and big fans of Star Trek.
@@ -56,7 +63,7 @@
       </div>
       <div class="bio">
         <p>
-          Lorem ipsum dolor sit amneius I wish I had gotten that sweet motorcycle!  Desmon d enjoys playing pinball and growing his mustache.  Its any scss file but it only happens intermittently, they files are definitely there. it will happen for a while and the site doesn't load css, but if i carry on making more changes eventually the error goes away and the site loads normally
+        Desmond is the founder of the EMPEX Conference Series and runs <a href="http://crevalle.io" target="_blank">Crevalle</a>, a boutique software consultancy.  In his free time he likes to surf, play pinball, and ride his motorcycle, Porco Rosso.  He lives in Venice Beach, California.
         </p>
       </div>
     </div> <!-- host -->
@@ -68,7 +75,7 @@
           <a href="https://twitter.com/cjbell_" target="_blank">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://github.com/cjbell_" target="_blank">
+          <a href="https://github.com/cjbell" target="_blank">
             <i class="fab fa-github"></i>
           </a>
         </div>
@@ -78,7 +85,7 @@
       </div>
       <div class="bio">
         <p>
-          Lorem ipsum dolor sit amneius I wish I had gotten that sweet motorcycle!  Desmon d enjoys playing pinball and growing his mustache.  Its any scss file but it only happens intermittently, they files are definitely there. it will happen for a while and the site doesn't load css, but if i carry on making more changes eventually the error goes away and the site loads normally
+        Chris is an Englishman in New York, where he works as the Director of Engineering at <a href="https://frame.io" target="_blank">Frame.io</a>, a startup that helps video teams collaborate. An avid alchemist, he is a regular speaker at Elixir conferences and helps organize the NYC branch of EMPEX.
         </p>
       </div>
     </div> <!-- host -->

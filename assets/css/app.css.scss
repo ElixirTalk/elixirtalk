@@ -114,3 +114,17 @@ body {
   font-weight: 300;
   color: $et-purple;
 }
+
+a {
+  color: $et-pink;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.social {
+  a {
+    color: $et-purple;
+  }
+}
