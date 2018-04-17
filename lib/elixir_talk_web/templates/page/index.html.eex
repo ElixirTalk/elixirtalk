@@ -12,11 +12,11 @@
   <h3>Latest Episode</h3>
   <div class="episode">
     <div class="link">
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/424238469&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/430877001&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>"></iframe>
     </div>
     <div class="description">
       <p>
-      How should you use Javascript with your Phoenix app?  And should you worry about having processes that hog your CPU?  Will it slow down other processes?
+      A pleasantly casual discussion about using processes and ETS to cache your app, along with some deployment questions.  We also mention a new high-performance library for batching calls to Segment.io.
       </p>
     </div>
   </div>
