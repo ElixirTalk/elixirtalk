@@ -12,11 +12,14 @@
   <h3>Latest Episode</h3>
   <div class="episode">
     <div class="link">
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/444467478&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= current_show_id %>&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
     </div>
     <div class="description">
       <p>
-      We discuss typespecs, why they're important, and why you should use them.  We also look at hot code upgrades, why they're not so scary, and why you should use them too!
+        How do you train your teams on Elixir?  What's a natural progression for learning the language?
+      </p>
+      <p>
+      We relate our experiences training our own teams and our clients' teams of developers, most of which have experience in other languages bu are new to Erlang concepts.  It's a lot to pick up at once!
       </p>
     </div>
   </div>
