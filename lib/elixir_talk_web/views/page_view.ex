@@ -16,12 +16,11 @@ defmodule ElixirTalkWeb.PageView do
   def description(%{description: description}) do
     description
     |> String.replace("\n", "</p><p>")
-    |> wrap_in_paragraphs()
     |> raw()
   end
 
-  defp wrap_in_paragraphs(incomplete_html) do
-    "<p>#{incomplete_html}</p>"
+  def created(%{updated: date}) do
+    Timex.format!(date, "{Mfull} {D}, {YYYY}")
   end
 
 end
