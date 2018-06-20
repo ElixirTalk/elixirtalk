@@ -1,12 +1,6 @@
 defmodule ElixirTalkWeb.PageView do
   use ElixirTalkWeb, :view
 
-  def current_show_id do
-
-    "447653883"
-
-  end
-
   def id(%{id: id}) do
     id
     |> String.split("/")
