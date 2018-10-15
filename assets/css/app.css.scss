@@ -53,26 +53,65 @@ section {
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
-  padding: 5px;
+  padding: .5em;
 }
 
 .episode {
   display: flex;
+  flex-flow: row wrap;
 
   .link {
     flex: 1;
-    margin-right: 10px;
+    flex-basis: 40%;
   }
 
   .description {
     flex: 1;
+    flex-basis: 58%;
   }
 
 }
 
+.episode-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 2em;
+
+  .title {
+    width: 100%;
+  }
+
+  .description {
+    flex: 1;
+    flex-basis: 60%;
+  }
+
+  .links {
+    flex: 1;
+    flex-basis: 5%;
+
+    div {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      a {
+        flex: 1;
+        font-size: 3em;
+        width: 2em;
+        text-align: center;
+      }
+    }
+  }
+}
+
 
 .listen {
-  padding-top: 5px;
+  text-align: center;
+  padding-top: 1em;
+  margin: .5em 0 0 0;
+  border-top: 1px solid #FFF;
 }
 
 .bg-pink {
@@ -107,6 +146,7 @@ section {
 .footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 5em;
 }
 
 body {
@@ -127,4 +167,12 @@ a {
   a {
     color: $et-purple;
   }
+}
+
+.centered {
+  text-align: center;
+}
+
+strong {
+  font-weight: 600;
 }

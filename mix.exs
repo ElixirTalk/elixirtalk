@@ -41,8 +41,9 @@ defmodule ElixirTalk.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:timex, "~> 3.3", override: true},
+      {:earmark, "~> 1.2"},
       {:distillery, "~> 1.5"},
-      {:edeliver, "~> 1.4"}
+      {:edeliver, "~> 1.4"},
     ]
   end
 end

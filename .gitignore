@@ -26,3 +26,9 @@ npm-debug.log
 # secrets files as long as you replace their contents by environment
 # variables.
 /config/*.secret.exs
+
+# Ignore pre-commit hooks
+.pre-commit-config.yaml
+
+# Ignore ASDF files
+.tool-versions
