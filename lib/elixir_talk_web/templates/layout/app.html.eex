@@ -24,12 +24,22 @@
 
     <title>The ElixirTalk Podcast</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
 
   <body>
     <div class="container">
       <main role="main">
+        <div class="header">
+          <div class="headline">
+            <div class="logo">
+              <img src=<%= static_path(@conn, "/images/logo.png") %> width="100px">
+            </div>
+            <h1>The ElixirTalk Podcast</h1>
+          </div>
+          <p>Taking questions from around the Elixir community about application design principles and the state of the ecosystem. <a href="https://github.com/elixirtalk/elixirtalk/issues" target="_blank">Ask us a question</a>! </p>
+        </div>
+
         <%= render @view_module, @view_template, assigns %>
       </main>
 

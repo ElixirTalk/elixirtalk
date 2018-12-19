@@ -9,12 +9,17 @@ defmodule ElixirTalkWeb.PageView do
 
   def description(%{description: description}) do
     description
-    |> String.replace("\n", "</p><p>")
+    |> replace_links
+    |> Earmark.as_html!
     |> raw()
   end
 
   def created(%{updated: date}) do
     Timex.format!(date, "{Mfull} {D}, {YYYY}")
+  end
+
+  def replace_links(text) do
+    Regex.replace(~r/\b((https?|ftp):\/\/[^\s]+)\b/, text, "[\\1](\\1)")
   end
 
 end

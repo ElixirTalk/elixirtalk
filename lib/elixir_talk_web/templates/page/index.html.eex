@@ -1,28 +1,16 @@
-<div class="header">
-  <div class="headline">
-    <div class="logo">
-      <img src=<%= static_path(@conn, "/images/logo.png") %> width="100px">
-    </div>
-    <h1>The ElixirTalk Podcast</h1>
-  </div>
-  <p>Taking questions from around the Elixir community about application design principles and the state of the ecosystem. <a href="https://github.com/elixirtalk/elixirtalk/issues" target="_blank">Ask us a question</a>! </p>
-</div>
-
 <section class="latest-episode bg-pink">
-  <h3>Latest Episode</h3>
+  <h3>Latest Episode: <%= @track.title %> (<%= created(@track) %>)</h3>
   <div class="episode">
-    <div class="link">
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= id(@track) %>&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-    </div>
     <div class="description">
-      <p>
-        <%= created(@track) %> - <%= description(@track) %>
-      </p>
+      <%= description(@track) %>
+    </div>
+    <div class="link">
+      <iframe width="440" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= id(@track) %>&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
     </div>
   </div>
   <div class="listen">
     <p>
-    Listen to all episodes on <a href="https://itunes.apple.com/us/podcast/elixirtalk/id1298287048?mt=2" target="_blank">iTunes</a> or our <a href="https://soundcloud.com/elixirtalk" target="_blank">SoundCloud page</a>.
+      You can view and listen to past episodes on our <a href="/episodes">listing page</a>, our <a href="https://soundcloud.com/elixirtalk" target="_blank">SoundCloud page</a>, or on <a href="https://itunes.apple.com/us/podcast/elixirtalk/id1298287048?mt=2" target="_blank">iTunes</a>.
     </p>
   </div>
 </section>

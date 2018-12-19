@@ -1,0 +1,29 @@
+<section class="episode-list">
+  <%= for episode <- @episodes do %>
+    <div class="episode-item">
+      <div class="title">
+        <h3><%= episode.title %></h3>
+      </div>
+      <div class="description">
+        <%= description(episode) %>
+      </div>
+      <div class="links">
+        <div>
+          <a href="<%= episode.url %>"
+             title="View this episode on SoundCloud"
+             class="soundcloud"
+             target="_blank"
+             rel="noopener"><i class="fab fa-soundcloud"></i></a>
+          <a href="https://itunes.apple.com/us/podcast/elixirtalk/id1298287048"
+             title="View this episode in iTunes"
+             class="itunes"
+             target="_blank"
+             rel="noopener"><i class="fab fa-itunes"></i></a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</section>
+<section>
+  <p class="centered"><a href="/">Back to the home page</a></p>
+</section>

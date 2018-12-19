@@ -8,4 +8,11 @@ defmodule ElixirTalkWeb.PageController do
 
     render conn, "index.html", %{track: latest_track}
   end
+
+  def episodes(conn, _params) do
+    {:ok, %{body: body}} = HTTPoison.get("http://feeds.soundcloud.com/users/soundcloud:users:334579745/sounds.rss")
+    {:ok, parsed} = ElixirFeedParser.parse(body)
+
+    render conn, "entries.html", episodes: parsed.entries
+  end
 end
